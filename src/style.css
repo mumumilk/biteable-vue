@@ -1,0 +1,74 @@
+@font-face {
+  font-family: Brown;
+  src: url('assets/fonts/brown/brown-light.woff2') format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Brown;
+  src: url('assets/fonts/brown/brown-regular.woff2') format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Brown;
+  src: url('assets/fonts/brown/brown-bold.woff2') format("woff2");
+  font-weight: 600;
+}
+
+:root {
+  --font-light: 300;
+  --font-normal: 400;
+  --font-bold: 600;
+
+  --color-primary: #1DE9B6;
+  --color-primary-dark: #000021;
+  --color-secondary: #000A47;
+  --color-danger: #FF5000;
+  --color-danger-dark: #F93903;
+  --color-warning: #FF96B4;
+  --color-success: #18FFFF;
+  --color-purple-500: #5B51BC;
+  --color-purple-600: #363073;
+  --color-purple-900: #161824;
+  --color-hover: #E2F5FC;
+  --color-gray-100: #F2F2F4;
+  --color-gray-200: #E7EBEE;
+  --color-gray-300: #D6D7D9;
+  --color-gray-400: #C3C6C9;
+  --color-gray-500: #ABACAF;
+  --color-gray-600: #7B7C7F;
+  --color-gray-700: #59616E;
+  --color-gray-800: #3A4149;
+  --color-white: #FFFFFF;
+
+  --background-danger: repeating-linear-gradient(
+    45deg,
+    var(--color-danger),
+    var(--color-danger) 20px,
+    var(--color-danger-dark) 20px,
+    var(--color-danger-dark) 40px
+  );
+
+  --border-radius: 3px;
+}
+
+:root {
+  font-family: Brown, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: var(--font-normal);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:focus-visible {
+  outline: none;
+}
