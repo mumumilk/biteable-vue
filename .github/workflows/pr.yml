@@ -1,0 +1,11 @@
+name: PR env
+
+on:
+  pull_request_target:
+
+jobs:
+  pr:
+    runs-on: ubuntu-latest
+    environment:
+      name: PR
+      url: 'https://google.com'
