@@ -1,7 +1,7 @@
 name: PR env
 
 on:
-  pull_request_target:
+  pull_request:
 
 jobs:
   pr:
@@ -9,3 +9,6 @@ jobs:
     environment:
       name: PR
       url: 'https://google.com'
+    steps:
+      - name: deploy
+        run: ls
